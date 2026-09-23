@@ -1,0 +1,41 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+header {
+	width: 100%;
+	color: #fff;
+	min-height:100vh;
+
+	background-image: url("./images/mobile/image-header.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+nav {
+	min-height: 5rem;
+
+	display: flex;
+
+	justify-content: space-between;
+
+	padding: 2rem;
+}
+
+.logo {
+	font-size: 0.5rem;
+}
+header .h-content {
+	margin-top: 10rem;
+	text-align: center;
+}
+header .h-content h1 {
+	font-size: 3rem;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
