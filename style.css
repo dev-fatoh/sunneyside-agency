@@ -1,10 +1,21 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-
+body {
+font-family: "Barlow", sans-serif;
+}
+a {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: bold;
+}
 header {
 	width: 100%;
 	color: #fff;
@@ -35,7 +46,37 @@ header .h-content {
 }
 header .h-content h1 {
 	font-size: 3rem;
+	font-family: "Fraunces" , sans-serif;
 	margin-bottom: 20px;
 	text-transform: uppercase;
 	letter-spacing: 5px;
 }
+
+.section-1 {
+	display: grid;
+	grid-template-columns: 1fr;
+}
+.section-1 img {
+ max-width: 100%;
+	object-fit: cover;
+}
+.section-1 div:nth-child(even){
+	padding: 2rem;
+	text-align: center;
+	line-height: 1.4;
+	
+}
+.section-1 div:nth-child(even) h3 {
+	font-size: 1.7rem;
+	font-weight: 900;
+	margin-bottom: 1rem;
+}
+
+.section-1 div:nth-child(even) p {
+	color: hsl(210, 4%, 67%);
+	font-weight: 700;
+	margin-bottom: 1.5rem;
+	line-height: 1.6;
+}
+
+
