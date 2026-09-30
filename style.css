@@ -381,6 +381,14 @@ header .h-content h1 {
 	.section-3 .testimonials h3 {
 		font-size: 1rem;
 	}
+.grid-gallery .img img:last-child {
+	display: block;
+}
+.grid-gallery .img img:first-child {
+	display: none;
+}
+
+
 .section-4 .grid-gallery {
 	grid-template-columns: repeat(4,1fr);
 }
@@ -407,6 +415,7 @@ header .h-content h1 {
 	grid-row: 1/2;
 
 }
+
 
 
 }
