@@ -1,4 +1,31 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap');
+@font-face {
+	font-family: "Barlow";
+	src: url("./fonts/Barlow/Barlow-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 600;
+
+}
+
+
+@font-face {
+	font-family: "Fraunces";
+	src: url("./fonts/Fraunces/static/Fraunces_72pt-SemiBold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 700;
+
+}
+
+@font-face {
+	font-family: "Fraunces";
+	src: url("./fonts/Fraunces/static/Fraunces_72pt-Bold.ttf") format("truetype");
+	font-style: normal;
+	font-weight: 900;
+
+}
+
+
+
+
 
 *,
 *::after,
@@ -20,7 +47,7 @@ a {
 	text-decoration: none;
 	text-transform: uppercase;
 	color: #000;
-	font-weight: bold;
+
 }
 
 header {
@@ -101,9 +128,7 @@ header .h-content h1 {
 
 .section-1 .content a {
 	position: relative;
-	font-family: "Fraunces", sans-serif;
-	font-size: 1.2rem;
-	font-weight: 900;
+	font-size: 1.8rem;
 	cursor: pointer;
 
 }
@@ -161,6 +186,7 @@ header .h-content h1 {
 	font-size: 3rem;
 
 	font-family: "Fraunces", sans-serif;
+	font-weight: 900;
 	margin-bottom: 3rem;
 }
 
@@ -224,6 +250,53 @@ header .h-content h1 {
 	height: 100%;
 	object-fit: cover;
 }
+
+
+/* SECTION 4 */
+.section-4 {
+	margin-top: 3rem;
+}
+.section-4 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.grid-gallery .img img:last-child {
+	display: none;
+}
+
+.section-4 .grid-gallery {
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-gallery .img-2 {
+	grid-column: 1 / 2;
+	grid-row: 1/2;
+
+}
+
+.grid-gallery .img-3 {
+	grid-column: 2 / 3;
+	grid-row: 1/2;
+
+}
+
+.grid-gallery .img-1 {
+	grid-column: 1 / 2;
+	grid-row: 2/3;
+
+}
+
+.grid-gallery .img-4 {
+	grid-column: 2 / 3;
+	grid-row: 2/3;
+
+}
+
+
+
 
 @media (min-width:375px) {
 	.section-1 {
@@ -308,4 +381,32 @@ header .h-content h1 {
 	.section-3 .testimonials h3 {
 		font-size: 1rem;
 	}
+.section-4 .grid-gallery {
+	grid-template-columns: repeat(4,1fr);
+}
+.grid-gallery .img-2 {
+	grid-column: 1 / 2;
+	grid-row: 1/2;
+
+}
+
+.grid-gallery .img-3 {
+	grid-column: 2 / 3;
+	grid-row: 1/2;
+
+}
+
+.grid-gallery .img-1 {
+	grid-column: 3 / 4;
+	grid-row: 1/2;
+
+}
+
+.grid-gallery .img-4 {
+	grid-column: 4 / 5;
+	grid-row: 1/2;
+
+}
+
+
 }
